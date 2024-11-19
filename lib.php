@@ -81,7 +81,8 @@ function block_analytics_graphs_get_students($course) {
     $students = array();
     $context = context_course::instance($course->id);
     $allstudents = get_enrolled_users($context, 'block/analytics_graphs:bemonitored', 0,
-                    'u.id, u.firstname, u.lastname, u.email, u.suspended', 'firstname, lastname');
+                    'u.id, u.firstname, u.lastname, u.email, u.suspended', 'firstname, lastname',
+                    0, 0, true);
     foreach ($allstudents as $student) {
         if ($student->suspended == 0) {
             if (groups_user_groups_visible($course, $student->id)) {
