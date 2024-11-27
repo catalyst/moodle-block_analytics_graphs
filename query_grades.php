@@ -19,7 +19,7 @@
 require_once("../../config.php");
 global $DB;
 require_once($CFG->dirroot.'/lib/moodlelib.php');
-require('lib.php');
+require_once('lib.php');
 
 $courseid = required_param('course_id', PARAM_INT);
 $formdata = required_param_array('form_data', PARAM_INT);

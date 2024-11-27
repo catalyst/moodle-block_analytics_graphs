@@ -28,7 +28,14 @@ if ($ADMIN->fulltree) {
     $settings->add(new admin_setting_configcheckbox(
         'block_analytics_graphs/onlyactive',
         get_string('settings:onlyactive', 'block_analytics_graphs'),
-        get_string('settings:onlyactivedescription', 'block_analytics_graphs'),
+        get_string('settings:onlyactive_help', 'block_analytics_graphs'),
+        0)
+    );
+
+    $settings->add(new admin_setting_configcheckbox(
+        'block_analytics_graphs/overrideonlyactive',
+        get_string('settings:overrideonlyactive', 'block_analytics_graphs'),
+        get_string('settings:overrideonlyactive_help', 'block_analytics_graphs'),
         0)
     );
 }

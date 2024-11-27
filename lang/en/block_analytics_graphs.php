@@ -202,4 +202,6 @@ $string['privacy:metadata:block_analytics_graphs_dest:messageid'] = 'The ID of t
 
 // Settings.
 $string['settings:onlyactive'] = 'Only active enrolments';
-$string['settings:onlyactivedescription'] = 'Consider only active enrolments for the reports';
+$string['settings:onlyactive_help'] = 'Consider only active enrolments for the reports';
+$string['settings:overrideonlyactive'] = 'Allow \'Only active enrolments\' per block instance';
+$string['settings:overrideonlyactive_help'] = 'If enabled, then \'Only active enrolments\' can be set per block instance. Otherwise, global setting will be used for all blocks.';
